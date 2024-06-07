@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intra link</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .topic{ border: 2px solid black;
+            margin: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        .topic:target{
+            background-color: black;
+            color: white;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            margin-right: 50px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">web development</h1>
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JAVASCRIPT</a></li>
+    </ul>
+    <div class="container">
+        <div id="html" class="topic">
+            <h2><a download href="../../public/english.pdf">HTML</a></h2>
+            <P>it is a hyper tet mark up language</P>
+        </div>
+        <div id="css" class="topic">
+            <h2><a href="./shoppingfull.html">CSS</a></h2>
+            <P>it is a hyper tet mark up language</P>
+        </div>
+        <div id="js" class="topic">
+            <h2><a  href="javascript:window.open('http://amazon.in','amazon','width=400px','height=500px')">JS</a></h2>
+            <P>it is a hyper tet mark up language</P>
+        </div>
+    </div>
+    <p>any quiries then contact to<a href="mailto:name@gmail.in">nikhilraj83700@gmail.com</a> </p>
+    <p><a href="tel:+918821051303">+918821051303</a> </p>
+</body>
+</html>

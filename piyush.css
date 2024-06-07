@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+}
+
+.upper-header {
+    display: flex;
+    justify-content: space-between; /* Add space between child elements */
+    /* align-items: center; Align child elements vertically */
+    padding: 10px; /* Add padding for spacing around the upper header */
+    background-color: #f0f0f0;
+}
+
+.upper-header span {
+    margin-right: 10px; /* Add right margin to all spans for space between them */
+}
+
+.upper-header select {
+    margin-right: 10px; /* Add right margin to selects for space between them */
+}
+.select{
+    border: none;
+}
+.truck-text{
+    font-size: 13px;
+}
+.upper-menu{
+    margin-left: 20px;
+}
+
+.lower-header {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Add space between child elements */
+    /* align-items: center; Align child elements vertically */
+    padding: 10px; /* Add padding for spacing around the upper header */
+    background-color: white;
+}
+.SiteName{
+    font: bold;
+    font-size: 25px;
+}
+.icon{
+    margin-left: 10px;
+}
+.dealoffer{
+    display: flex;
+    justify-content: center;
+    background:black;
+    color: white;
+    padding: 17px;
+}
+.card1{
+background-image:url(/public/mainbanner.jpg);
+background-size: cover;
+height: 700px;
+}
+.box1{
+    align-items: center;
+    margin-left: 70%;
+    padding-top: 250px;
+    font-size: 30px;
+}
+.card1 button{
+    background-color: gold;
+    margin-left: 70%;
+    padding: 10px;
+    font-size: 20px;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,lightpink 100%);
+}
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)),url(/public/img1\ man.webp);
+    width: 25%;
+    height: 350px;
+    
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)),url(/public/img3\ girl.webp);
+    width: 25%;
+    height: 350px;
+}
+.card4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(/public/img2\ beg.webp);
+    width: 25%;
+    height: 350px;
+}
+.box2{
+   
+    margin-top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: -webkit-fill-available;
+}
+.box2 div{
+    font-size: 15px;
+    color: bisque;
+}
+footer{
+    margin-top: 10px;
+    background: rgba(17, 13, 13, 0.934);
+}
+.upper-footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(63, 60, 60);
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+}
+.input-mail button{
+    font-size: 20px;
+    padding: 10px;
+    background:red;
+    color: white;
+}
+.middle-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ; */
+    color: aliceblue;
+}
+.lower-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ; */
+    color: gray;
+}
+h3{
+    color: white;
+}

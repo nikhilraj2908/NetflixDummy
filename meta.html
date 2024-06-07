@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            text-align: center;
+        }
+        .container{
+            align-items: center;
+            margin-left: 600px;
+            margin-top: 100px;
+        }
+         input{
+            height: 20px;
+            padding: 10px;
+            margin-bottom: 15px;
+        } 
+        button{
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+        }
+        #foot:hover{
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        footer{
+            border: 1px dotted gray;
+            margin-top: 30px;
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        span{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form style="text-align: center; height: 500px; width: 400px; border: 1px dotted black;">
+       <div>
+        <h1 id="heading">Instagrame</h1>
+        <p style="color:gray;">
+            you can log into these accounts because they're in your Accounts Center.
+        </p>
+        <div>
+            <input style=" width: 300px;" placeholder="Enter  user name" pattern="[a-zA-Z_]{4,15}" name="username"><br>
+            <input style=" width: 300px;" type="password" placeholder="Enter your password" name="password"><br>
+            <button id="foot">Sign in</button>
+        </div>
+        <fieldset>
+            <legend>New user?</legend>
+            <input type="radio" name="comfrmation" value="yes">yes 
+            <input type="radio" name="confrmation" value="No">No
+        </fieldset>
+        <p>date of ragistration in instagrame</p>
+        <input type="date" min="2019-11-12" max="2023-08-01" name="date">
+        <button>submit</button>
+       </div>
+    </form>
+    <footer>
+        <span id="foot">forgotton password </span> or <span id="foot"> sign up</span>
+    </footer>
+   </div>
+</body>
+</html>

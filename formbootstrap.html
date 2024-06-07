@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css"> 
+    <style>
+    #mail~div {
+    display: none; /* Placeholder color */
+}
+
+#mail:focus ~div {
+    display: block;
+    color: #f00; /* Highlight color */
+}
+#checkbox:checked+span{
+    color: green;
+}
+#checkbox+span{
+    color: #f00;
+}
+#require:required+span{
+ display: inline;
+ color: #f00;
+}
+#require:focus+span{
+    display: none;
+}
+#require:valid~div{
+    display: none;
+}
+#require:invalid~div{
+    display: block;
+}
+p::selection{
+    background-color: #f00;
+}
+    </style>
+</head>
+<body text="red" class="container-fluid">
+    <div class="input-group w-25 mt-4 " id="mail-box">
+        <span class="bi bi-person input-group-text"></span>
+        <input class="form-control " id="mail">
+        <span class="bi bi-check input-group-text"></span>
+        <div >enter your mail id</div>
+        <input type="password" name="pass" placeholder="enter password" class="form-control">
+    </div>
+   
+    <div class="input-group mt-4">
+        <select class="input-group-text">
+            <option>All</option>
+            <option>Mobile</option>
+            <option>decoration</option>
+        </select>
+        <input type="name" class="form-control">
+        <button type="submit" class="btn btn-danger">Submit </button>
+    </div>
+    <div class="input-group input-group-lg bg-dark p-4 mt-4">
+        <input type="email" placeholder="Enter your mail id" class="form-control">
+        <button class="btn btn-danger ">Get started ></button>
+    </div>
+    
+    <div class="input-group w-25 mt-4" >
+        <span class="bi bi-person input-group-text " ></span>
+        <input class="form-control" type="text" placeholder="Enter username">
+        <span class="bi bi-check input-group-text"></span>
+
+    </div>
+    <div class="input-group w-25 mt-4" >
+        <span class="bi bi-key input-group-text " ></span>
+        <input class="form-control" type="password" placeholder="Enter Password">
+        <span class="bi bi-check input-group-text"></span>
+    </div>
+   
+    <div class="btn-toolbar bg-danger p-3 mt-4 d-flex justify-content-between  ">
+        <div>
+            <button class="bi bi-house-fill btn btn-danger">Home</button>
+        </div>
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="search here">
+            <button class="bi bi-search btn btn-light"></button>
+        </div>
+        <div>
+            <button class="bi bi-person btn btn-danger"></button>
+            <button class="bi bi-heart btn btn-danger"></button>
+            <button class="bi bi-cart btn btn-danger"></button>
+        </div>
+    </div>
+    <fieldset>
+        <legend>form</legend>
+        <textarea cols="10" rows="5">
+
+        </textarea>
+        <div><input type="checkbox" id="checkbox"><span>I accpt</span></div>
+    </fieldset>
+    <div>
+        <input placeholder="enter your name" type="text" id="require" required><span>*</span>
+        <div ><font color="red">name is required</font></div>
+    </div>
+    <div>
+        <p text="red">
+            To give color to text in HTML without using CSS, you can use the color attribute directly within the HTML tags. However, please note that using inline styles directly in HTML is not generally recommended because it can make your HTML code less maintainable and harder to manage. Here's how you can do it:
+        </p>
+    </div>
+    <button type="submit" class="btn btn-danger">nikhil ahriwar</button>
+</body>
+</html>

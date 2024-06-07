@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+       /* ul {
+        list-style: none;
+        border:1px solid gray;
+        width: 100px;
+        height: 50px;
+        overflow: auto;
+       } */
+       .form{
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+       }
+       .container{
+        display: grid;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        
+       }
+       input{
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 25px;
+       }
+       li{
+        margin-bottom: 10px;
+       }
+
+      
+        li::marker {
+          color: red; /* Change the color of the bullet */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <form>
+       <fieldset>
+        <legend>Select Courses</legend>
+        <ul>
+            <li><input name="Course" value="UI" type="checkbox">UI</li>
+            <li><input name="Course" value=".NET" type="checkbox">.NET</li>
+            <li><input name="Course" value="Java" type="checkbox">Java</li>
+            <li><input name="Course" value="AWS" type="checkbox">AWS</li>
+            <li><input name="Course" value="Azure" type="checkbox">Azure</li>
+        </ul>
+        <button>Submit</button>
+       </fieldset>
+    </form> -->
+    <div class="container"> 
+        <div style="background-color: lightcyan; padding: 20px; ">
+            <div class="form">
+                <div style=" padding-right: 20px; border-right: 1px dotted gray; ">
+                    <h2 style="border-bottom: 1px solid gray;">SANSKRIT OPTIONAL UPSC COURSE</h2>
+                    <p style="font: bold;">80 CLASSES COVERING COMPLETE SYLLABUS -</p>
+                    <ul>
+                        <li>10 ANSWER WRITING IMPROVEMENT CLASSES.</li>
+                        <li>HANDWRITTEN NOTES + COVERED PREVIOUS YEAR QUESTIONS IN NOTES.</li>
+                        <li>LIVE CLASSES ON Google Meet.</li>
+                        <li> WEEKLY TEST SERIES.</li>
+                        <li>BEST MODEL ANSWERS.</li>
+                        <li>CLASSES TIME: EVENING 08:00 PM - 10:30 PM.</li>
+                        <li> MENTORSHIP UNTIL INTERVIEW.</li>
+                        <li> FOR FURTHER INFORMATION, CONTACT G.N. SHASTRI SIR 📲🤙 7879877858</li>
+                    </ul>
+                </div>
+                <div>
+                    <form style="text-align: center;">
+                        <h2>Ragister your self</h2>
+                        <div>
+                            <input type="text" class="form-control ms-3" placeholder="First Name" >
+                            <!-- <button type="submit">Submit</button> -->
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Last Name"class="form-control ms-3"  size="25">
+                            <!-- <button type="submit">Submit</button> -->
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Contact No" pattern="[0-9]{10}" class="form-control ms-3" size="25">
+                            <!-- <button type="submit">Submit</button> -->
+                        </div>
+                        <div>
+                            <input type="email" placeholder="username@gmail.com" class="form-control ms-3"  size="25">
+    
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <button type="submit" style="padding: 5px; border-radius: 10px; width: 130px; background-color: rgb(102, 102, 255);">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

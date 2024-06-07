@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>SAMRAT ASHOK TECHNOLOGICAL INSTITUTE</title>
+    <style>
+        header{
+            display: flex;
+            grid-template-columns: 1.33fr 1.33fr 1.33fr 1.33fr 1.33fr 1.33fr 1.33fr 1.33fr 1.33fr ;
+            padding: 10px;
+            background-color: navy;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        section{
+            display: flex;
+            grid-template-columns: 2fr 8fr 2fr;
+
+        }
+        .img{
+            width: 50px;
+            height: 60px;
+            border: 1px solid black;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        article{
+            color: black;
+            border: 1px solid black;
+        }
+        .navigation-bar {
+            display: flex;
+        }
+        .home{
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+        }
+        details {
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+        }
+        header div {
+            height: 22px;
+        }
+        details:hover {
+            background-color: aliceblue;
+            color: black;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            background-color: rgb(26, 26, 66);
+            color: white;
+            padding: 10px;
+            height: 400px; 
+        }
+        .left-column{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            border-right: 5px solid black;
+            background-color:rgb(26, 26, 66);
+        }
+        .right-column{
+            margin-left: 10px;
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            background-color: rgb(26, 26, 66);
+            /* border-right: 3px solid black; */
+        }
+        .footer-brand{
+            font-weight:bold;
+            font-size: 25px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            
+        }
+        .footer-brand~div{
+            margin-left: 90px;
+            font-size: 20px;
+            margin-top: 10px; 
+            /* padding-top: 10px; */
+
+        }
+        aside{
+            position: fixed;
+            right: 10px;
+            size: 40px;
+            bottom:300px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <figure>
+            <div class="img">
+                <img width= 50 height= 60 src="/public/banner.jpg">
+            </div>
+        </figure>
+        <div class="home">HOME</div>
+        <div class="navigation-bar">
+            <div>
+                <details>
+                    <summary>About Us</summary>
+                    <div>directors message</div>
+                    <div>abouut bog</div>
+                    <div>about college</div>
+                </details>
+            </div> 
+            <div>
+                <details class="about">
+                    <summary>Acadmics</summary>
+                        <div>directors message</div>
+                        <div>abouut bog</div>
+                        <div>about college</div>
+                </details>
+            </div>
+            <div>
+                <details class="about">
+                    <summary>Admission</summary>
+                        <div>directors message</div>
+                        <div>abouut bog</div>
+                        <div>about college</div>
+                </details>
+            </div>
+            <div>
+                <details class="about">
+                    <summary>Department</summary>
+                        <div>directors message</div>
+                        <div>abouut bog</div>
+                        <div>about college</div>
+                </details>
+            </div>
+            <div>
+                <details class="about">
+                    <summary>college life</summary>
+                        <div>directors message</div>
+                        <div>abouut bog</div>
+                        <div>about college</div>
+                    </summary>
+                </details>
+            </div>   
+        </div>
+    </header>
+    <section>
+        <nav>
+            <article>
+                <marquee scrollamount=30>
+                    <img src="/public/sdm.jpg">
+                    <img src="/public/udaan.jpg">
+                    <img src="/public/mallakhamb.jpg">
+                    <img src="/public/nikkncc.jpg">
+                </marquee>
+            </article>
+        </nav>
+        <main>
+            <div class="title">Samrat Ashok Technological Institute</div>
+            <div class="subtittle">digree college</div>
+            <div class="subtittle2">vidisha(M.P.)</div>
+        </main>
+        <aside>
+            <div class="bi bi-facebook"></div>
+            <div class="bi bi-instagram"></div>
+            <div class="bi bi-twitter"></div>
+            <div class="bi bi-linkedin"></div>
+        </aside>
+    </section>
+    <footer>
+        <div class="left-column">
+            <div>
+                <div class="footer-brand"> Important links</div>
+                <!-- <div class="links"></div> -->
+                <div>jhingallaala</div>
+                <div>huhuu</div>
+                <div>jhingallaala</div>
+                <div>huhu</div>
+                <div>huhuu</div>
+                <div>jhingallaala</div>
+                <div>huhu</div>
+                <div>huhuu</div>
+                <div>jhingallaala</div>
+                <div>huhu</div>
+            </div>
+            <div>
+                <div class="footer-brand">exma related</div>
+                <div>dfsfs</div>
+                <div>dfsfs</div>
+                <div>dfsfs</div>
+                <div>dfsfs</div>
+                <div>dfsfs</div>
+            </div>      
+            <div>
+                <div class="footer-brand">usefull links </div>
+                <!-- <div class="links"></div> -->
+                <div>notices</div>
+                <div>result</div>
+                <div>antiragging</div>
+                <div>activities</div>
+            </div>   
+        </div>
+        <div class="right-column">
+            <div>
+                <div class="footer-brand">get in touch with us</div>
+                <div class="bi bi-house"> samrat ashok Technological Institute,civil lines vidisha(M.p.)</div>
+                <div class="bi bi-envelope-fill"> nikhil19ec034@satiengg.in</div>
+                <div class="bi bi-person"> 9713062505</div>
+                <div class="footer-brand">others</div>
+                <details>
+                    <summary>ragistrar</summary>
+                    <div>8821051303</div>
+                </details>
+                <details>
+                    <summary>director</summary>
+                    <div>9893156336</div>
+                </details>
+            </div>
+            <div>yoga karmashu koshalam</div>
+        </div>    
+    </footer>
+
+
+</body>
+</html>

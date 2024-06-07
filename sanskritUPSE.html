@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC BY SHASTRI JI</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .header-up{
+            display: flex;
+            grid-template-columns: 2fr 6fr 4fr;
+            justify-content: space-between;
+            background-color:black;
+            color: white;
+            height: 50px;
+        }
+        .logo>img{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 100px;
+            margin-top: 7px;
+        }
+        p{ 
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        nav{
+            margin-top: 15px;
+            margin-right: 100px;
+        }
+        nav>span{
+            padding: 10px;
+        }
+        .header-lower{
+            display: flex;
+            grid-template-columns: 5fr 6fr 1fr;
+            justify-content: space-between;
+            height: 60px;
+            margin-top: 20px;
+            /* margin-bottom: 20px; */
+            border-bottom: 1px solid lightgray;
+        }
+        .input-group:hover{
+            border:1px solid black;
+            border-radius: 5px;
+        }
+        .input-group>span:hover{
+            cursor: pointer;
+        }
+        .input-group{
+            width: 700px;
+            height: 40px;
+        }
+        .menu-bar{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        .banner>img{
+            margin-top: 20px;    
+            width: 100%;   
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+        }
+        
+        .message>img{
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px gray;
+        }
+       .card{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+       }
+       button{
+        border-radius: 10px;
+        justify-content: center;
+        background: orange;
+        color: white;
+       }
+       .readmore{
+        text-align: center;
+        padding-bottom: 15px;
+       }
+       article{
+        width: 80%;
+        height: 450px;
+        border: 1px solid lightgray;
+        margin: 15px;
+        border-radius: 5px;
+       }
+       marquee{
+        height: 350px;
+       }
+       h3{
+        text-align: center;
+       }
+       footer{
+        display: grid;
+        grid-template-rows: 5fr 1fr;
+        background-color: black ;
+        color: white;
+       }
+       .footer-up{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        height: 300px;
+        padding: 50px;
+       }
+       .footer1{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+       }
+       .footer2{
+        padding:20px;
+       }
+       .social{
+        text-align: center;
+        font-size: 20px;
+        padding: 10x;
+       }
+       .social>span{
+        padding: 5px;
+       }
+       .footer-down{
+        height: 20px;
+       }
+     
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="header-up">
+            <span class="logo"><img src="../../public/logo.png"></span>
+            <span ><p>UPSC  BY  SHASTRI  SIR</p></span>
+            <nav>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-youtube"></span>
+            </nav>
+        </div>
+        <div class="header-lower" >
+            <div class="header-menu">
+                <span class="menu-bar">HOME</span>
+                <span class="menu-bar">
+                    <select style="border: none;">
+                        <option>Courses</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </span>
+                <span class="menu-bar">
+                    <span>About Us</span>
+                </span>
+                <span class="menu-bar">
+                    <span>Contact</span>
+                </span>
+                <span class="menu-bar">
+                    <span>FAQs</span>
+                </span>
+            </div>
+            <div class="input-group">
+                <input type="text"  class="form-control" placeholder="Search for notes">
+                <span class="bi bi-search input-group-text"></span>
+            </div>
+            <div>
+                <span class="bi bi-cart" style="margin-right: 30px; font-size: 20px; padding-left:5px ;"></span>
+                <div style="padding-bottom: 10px;">Cart</div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <menu>
+            <div class="container">
+                <div class="card">
+                    <div class="message">
+                        <img width="40%" height="35%" align="left" vspace="10" hspace="10" src="../../public/upscsir.jpeg" >
+                        <p style="text-align: justify; padding: 5px;">This is my privilege to welcome you and introduce the "Site", a Grant in Aid Autonomous Institute” located at Vidisha.(M.P.) I am proud to put on record that the institute which was established in Nov. 1960 with three core engineering  Civil,Mechanical,ECE...</p>
+                        <div class="readmore"><button class="bi bi-arrow-right ">Read More</button> </div>              
+                </div>
+            </div>
+        </menu>
+        <main>
+            <div class="banner">
+                <img src="../../public/upsebanner.png" width="90%" height="60%">
+            </div>
+            
+        </main>
+        <aside>
+            <article>
+                <h3 >Important Notices:-</h3>
+                <marquee scrollamount="2" direction="up" >
+                    <ol>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                        <li>New notes of chapter 1 has come</li>
+                    </ol>
+                </marquee>
+            </article>
+        </aside>
+    </section>
+    <footer>
+        <div class="footer-up">
+            <div >
+                <h3>Social-Sites</h3>
+                <div class="social">
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-whatsapp"></span>
+                </div>
+            </div>
+            <div style="margin-left: 50px;">
+                <h6>ABOUT</h6>
+                <div>terms and conditions</div>
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
+            </div>
+            <div>
+                <h6>SUPPORT</h6>
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
+            </div>
+            <div style="padding-left: 20px;">
+                <h5>Contact-US</h5>
+                <div class="bi bi-house"> Your full address,Vidisha(M.P.),464001 </div>
+                <div class="bi bi-envelope-fill"> email@gmail.com</div>
+                <div class="bi bi-person"> tellyphone(000000)</div>
+                <div class="footer-brand">others</div>
+                <details>
+                    <summary>Support</summary>
+                    <div>+91000000000</div>
+                </details>
+                <details>
+                    <summary>director of Institute</summary>
+                    <div>+910000000000</div>
+                </details>
+            </div>
+            </div>
+        </div>
+        <div class="footerdown">
+            <h3>&#169;2023 All rights reserved.</h3>
+        </div>
+    </footer>
+</body>
+</html>

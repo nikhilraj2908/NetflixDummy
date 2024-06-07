@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 6fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            background-color: rgb(26, 25, 25);
+            /* text-align: center; */
+            align-items: center;
+            color: aliceblue;
+        }
+        .logo{
+            width: 150px;
+            height: 40px;
+        }
+        .input-group > input{
+            width: 75%;
+        }
+        .input-group{
+            margin-left: 30px;
+        }
+        .bg-img >img{
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+        }
+        .bg-img{
+            background-color: rgba(0, 0, 0, 0.9);
+            height: 100%;
+            z-index: 1;
+        }
+        
+        main{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            margin-top: -300px;
+            margin-right: 45px;
+        }
+        main2{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            margin-top: 30px;
+            margin-right: 45px;
+        }
+        .card{
+            background-color: whitesmoke;
+            display: flex;
+            width: 90%;
+            text-align: center;
+            justify-content: center;
+            margin-left: 50px;
+            height: 370px;
+            
+        }
+        .card-row{
+            display: flex;
+        }
+        .card-row img{
+            display: flex;
+            width: 90%;
+            justify-content: center;
+            margin: 10px;
+        }
+        .card-header{
+            font-weight: bold;
+        }
+        .card-footer{
+            color: blue;
+        }
+        header{
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+        h2{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            background-color: rgb(23, 22, 22);
+            color: whitesmoke;
+            padding: 30px;
+            border-top: 10px solid gray;
+        }
+        .tittle-footer{
+            
+            display: inline-block;
+            padding: 10px;
+        }
+        .tittle-footer~div{
+            display: block;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        alert("you need to varify you are aligibe to buy or not")
+        a=prompt("enter your salary")
+        a=parseInt(a)
+        if(a==0 || a<0){
+            alert("you are bhikhari can not affort to buy")
+            location.href="page not found"
+        }
+        else if(a<10000){
+            alert("you need to save money u can buy from another cheap sites like amazon")
+            location.href="http://amazon.in"
+        }
+        else{
+            alert ("your most welcom you are rich and u can affort to buy have anice day")
+            document.getElementById('salaryInput').value = a;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="../../public/amazon.jpg.png">
+        </div>
+        <div style="display: flex; margin-left: -30px;">
+            <span class="bi bi-geo-alt" style="margin-top: 15px; margin-right: 5px; font-size: 20px;"></span>
+            <span style="font-size: 14px; "><div>Delivering to Bengaluru 560004</div>
+                <div style="font-weight: bold;">Update location</div>
+            </span>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">
+                <select style="border: none;">
+                    <option>all</option>
+                    <option>ajjaa</option>
+                    <option>ajjaa</option>
+                    <option>ajjaa</option>
+                </select>
+            </span>
+            <input type="text" class="input-group-text" id="salaryInput">
+            <button type="submit" class="btn btn-primary bi bi-search"></button>
+        </div>
+        <div>
+            <span class="bi bi-flag"></span>
+            <select style="border: none; background-color: transparent; color: aliceblue;">
+                <option>EN</option>
+                <option>HINDI</option>
+                <option>TAMIL</option>
+            </select>
+        </div>
+        <div>
+            <span>
+                <div> Return</div>
+                <div style="font-weight: bold;">&order</div>
+            </span>
+        </div>
+        <div>
+            <span class="bi bi-cart" style="font-size: 25px; padding: 10px;">Cart</span>
+        </div>
+    </header>
+    <section>
+        <div class="bg-img">
+            <img src="../../public/amazonbanner.jpg">
+        </div>
+        <main>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer" >
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer">
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer" >
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer">
+                    see all offers
+                </div>
+            </div>
+        </main>
+        <h2>Some more offers only for today</h2>
+        <main2>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer" >
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer">
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer" >
+                    see all offers
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Up to 75% off | Headphone
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                </div>
+                <div class="card-row">
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span>
+                    <span>
+                        <img src="../../public/amazon-watches.jpg"> 
+                        <div>upto 70% off boat</div>
+                    </span> 
+                </div>
+                <div class="card-footer">
+                    see all offers
+                </div>
+            </div>
+        </main2>
+    </section>
+    <footer>
+        <div>
+            <div class="tittle-footer">Questions? Call 000-800-919-1694</div>
+            <div>Faqs</div>
+            <div>Investor Relations</div>
+            <div>Privacy</div>
+            <div>speed test</div>
+        </div>
+        <div>
+            <div class="tittle-footer">Help Centre</div>
+            <div>Jobs</div>
+            <div>cookies</div>
+            <div>Legal Notices</div>
+        </div>
+        <div>
+            <div class="tittle-footer">Account</div>
+            <div>Only on Netflix</div>
+            <div>Ways to Watch</div>
+        </div>
+        <div>
+            <div class="tittle-footer">Media Centre</div>
+            <div>terms of uses</div>
+            <div>Contact Us</div>
+            <a href="mailto:nikhilraj2908@gmail.com">mail us on</a>
+        </div>
+    </footer>
+</body>
+</html>

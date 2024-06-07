@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nikhil mega mart</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+    header{
+        display: flex;
+        grid-template-columns: 2fr 7fr 3fr;
+        justify-content: space-between;
+        background-color:white;
+        padding: 10px;
+        margin-right:20px ;
+    }
+    .header-head{
+        font-size: 33px;
+        color: black;
+        padding: 40px;
+        font: bold;
+    }
+    div nav{
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 30px;
+        font: bold;
+    }      
+    div span{
+        font:bold;
+        color: black;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .navigation-bar{
+        display: flex;
+    }
+    p{
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;
+    }
+    footer{
+        display: grid;
+        grid-template-rows: 2fr 5fr 3fr ;
+        height: 500px;
+        background-color: black;
+    }
+    footer sub{
+        display: grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        /* height: 100px; */
+    }
+    .footer-head{
+        color: white;
+        font-size: 30px;
+        padding:20px;
+        margin-left: 30px;
+    }
+    .socialmedia span{
+        color: white;
+    }
+    .socialmedia{
+        margin-left: 30px;
+    }
+    .footer-subhead{
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+    }
+    .footer-content{
+        font-size: 20px;
+        color: gray;
+        margin-left: 20px;
+    }
+     .copyright{
+        /* margin-right: 10px; */
+        font-size: 15px;
+        color: white;
+    }
+    footer p{
+        font-size: 30px;
+    }
+    footer  up{
+        text-align: center;
+        color:white;
+        font-size: 20px;
+    }
+    .mail{
+        border: 3px solid white;
+        margin-left: 500px;
+        margin-right: 500px;
+        text-align: left;
+        padding: 15px;
+    }
+    .card1{
+        width: 33%;
+        box-shadow: 10px 5px 3px gray;
+        height: 600px;
+        background-image: url(/public/men.jpg);
+        background-size: cover;
+    }
+    .card2{
+        width: 33%;
+        box-shadow: 10px 5px 3px gray;
+        height: 600px;
+        background-image: url(/public/women.jpg);
+        background-size: cover;
+    }
+    .card3{
+        width: 33%;
+        box-shadow: 10px 5px 3px gray;
+        height: 600px;
+        background-image: url(/public/kids.jpg);
+        background-size: cover;
+    }
+    .card4{
+        width: 30%;
+        box-shadow: 10px 5px 3px gray;
+        height: 300px;
+        background-image: url(/public/beg.jpg);
+        background-size: cover;
+        margin-right: 20px;
+    }
+    .card5{
+        width: 50%;
+        box-shadow: 10px 5px 3px gray;
+        height: 300px;
+        background-image: url(/public/shirt.jpg);
+        background-size: cover;
+        margin-left: 20px;
+    }
+    .card6{
+        width: 50%;
+        box-shadow: 10px 5px 3px gray;
+        height: 300px;
+        background-image: url(/public/women.jpg);
+        background-size: cover;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .card7{
+        width: 30%;
+        box-shadow: 10px 5px 3px gray;
+        height: 300px;
+        background-image: url(/public/men.jpg);
+        background-size: cover;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .card10{
+            width:250px;
+            height: 300px;
+            box-shadow: 2px 2px 2px gray;
+            margin-bottom: 30px;
+        }
+        .card10 span{
+            margin: 1px;
+        }
+    .rating {
+        display: flex;
+        padding-bottom: 30px;
+    }
+   .topimgside{
+            width:25%;
+            height: 40px;
+        }
+    .card8{
+        width: 220px;
+        /* box-shadow: 3px 3px 2px gray; */
+        /* margin: 20px; */
+        box-shadow: 2px 2px 3px gray;
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+    .card9{
+        background-image: url(/public/sendle2.jpg);
+        background-size: cover;
+        width: 90%;
+        height: 80%;
+        margin-top: 40px;
+        box-shadow: 2px 2px 2px gray;
+        margin-bottom: 30px;
+    }
+    .card10{
+        margin-right:90px ;
+        border: 2px solid gray;
+    }
+    .cardimgtop{
+        width: 100%;
+        height: 260px;
+    }
+    .container2{
+        margin-left:200px ;
+        padding-right: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 100px;
+    }
+    .box1{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .box2{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .box9{
+        height: 600px;
+        justify-content: right;
+        align-items: center;
+        display: flex;
+    }
+    .box{
+        height: 600px;
+        justify-content: center;
+       align-items: center;
+       display: flex;
+        }
+        h1{
+            font-size: 80px;
+            color: white;
+            text-shadow: 5px 2px 3px black;
+        }
+        .container{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        
+        .icon{
+            padding-left: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            font: bold;
+        }
+        section nav{
+            display: flex;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            justify-content: center;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+        .iconsum{
+            color: gray;
+            font-size: 15px;
+        }
+        nav{
+            border-bottom: 2px solid black;
+        }
+        .normal{
+            font-size: 20px;
+            color: gray;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            margin-top: 50px;
+        }
+        .tittle{
+            font-size:30px;
+            color:black;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+        }
+        .subtittle{
+            font-size:15px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        h2{
+            font-size: 30px;
+            /* text-align: ; */
+            /* justify-content: center; */
+            color: white;
+            text-shadow: 5px 2px 3px black;
+        }
+        .tittle2{
+            font-size: 30px;
+            color: black;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-top: 20px;
+        }
+        .catagiri{
+            color:black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .select{
+            color: green;
+            border-bottom: 2px solid black;
+            
+        }
+        .timer{
+            font-size: 60px;
+            color: black;
+            padding: 30px;
+            text-align: center;
+        }
+        .card-heading{
+            font-size: 30px;
+            color: black;
+            text-align: center;
+            height: 80px;
+        }
+        .card-body{
+            font-size: 20px;
+            color: gray;
+            text-align: center;
+        }
+        .review-heading span{
+            color: yellowgreen;
+            /* margin-left: 5px; */
+        }
+        .review-heading{
+            font-size: 20px;
+            font: bold;
+            padding-left: 15px;
+        }
+        .review-body{
+            color: gray;
+            font-size: 20px;
+            padding: 10px;
+        }
+</style>
+<body>
+    <header>
+        <div >
+            <span class="header-head">shopping.</span>
+        </div>
+        <div class="navigation-bar">            
+            <span>
+                <details>
+                    <summary>home</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details> 
+            </span>        
+            <span>
+                <details>
+                    <summary>blog</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details>
+            </span>
+            <span>
+                <details>
+                    <summary>page</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details>
+            </span>
+            <span>
+                <details>
+                    <summary>else</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details>
+            </span>
+            <span>
+                <details>
+                    <summary>docs</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details>
+            </span>
+            <span>
+                <details>
+                    <summary>shop</summary>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                    <div>pascode</div>
+                </details>
+            </span>
+        </div>
+        <div>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+    <section>
+        <p >⚡️ HAPPY HOLIDAY DEALS ON EVERYTHING ⚡️</p>
+        <div class="container">
+            <div class="card1">
+                <div class="box">
+                    <H1>MEN</H1>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="box">
+                    <H1>WOMEN</H1>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="box">
+                    <H1>KIDS</H1>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="icon">
+                <div class="bi bi-bus-front-fill"> Free shipping</div>
+                <div class="iconsum"> From all orders over $100</div>
+            </div>
+            <div class="icon">
+                <div class="bi bi-arrow-left-right"> Free return</div>
+                <div class="iconsum"> Free return with in 30 days</div>
+            </div>
+            <div class="icon">
+                <div class="bi bi-lock"> SECURE SHOPPING</div>
+                <div class="iconsum"> you r in safe hand</div>
+            </div>
+            <div class="icon">
+                <div class="bi bi-tag"> OVER 10,000 STYLES</div>
+                <div class="iconsum" > We have everything you need</div>
+            </div>
+           
+        </nav>
+        <div>
+            <div class="normal"> NEW COLLECTION</div>
+            <div class="tittle">Best Picks 2019</div>
+            <div class="subtittle">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, <br>above fly brought Very green.
+            </div>
+        </div>
+        <div class="container">
+            <div class="card4">
+                <div class="box1">
+                    <h2>begs collection</h2>
+                </div>
+            </div>
+            <div class="card5">
+                <div class="box2">
+                    <h2>shirt collection</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="card6">
+                    <div class="box2">
+                        <h2>women collection</h2>
+                    </div>
+                </div>
+                <div class="card7">
+                    <div class="box1">
+                      <h2>men's collection</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="tittle2">Top month's seller</div>
+        <div class="catagiri">
+            <span class="select">women</span>
+            <span >men</span>
+            <span >kid's</span>
+        </div>
+        <div class="container2">
+            <div class="card8">
+                <img src="/public/sendle.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>leather mid heal sendle</h4></div>
+                <div class="card-body">only on &#8377 999/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/sendle2.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>sendle sbse sunder</h4></div>
+                <div class="card-body">only on &#8377 999/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/nighty.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>new nighty</h4></div>
+                <div class="card-body">only on &#8377 999/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/shose.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>nikhil k purane shose</h4></div>
+                <div class="card-body">only on &#8377 25lakh/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/shose.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>nikhil k purane shose</h4></div>
+                <div class="card-body">only on &#8377 25lakh/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/shose.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>nikhil k purane shose</h4></div>
+                <div class="card-body">only on &#8377 25lakh/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/shose.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>nikhil k purane shose</h4></div>
+                <div class="card-body">only on &#8377 25lakh/-</div>
+            </div>
+            <div class="card8">
+                <img src="/public/shose.jpg" class="cardimgtop">
+                <div class="card-heading"><h4>nikhil k purane shose</h4></div>
+                <div class="card-body">only on &#8377 25lakh/-</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card9">
+                    <div class="box9">
+                        <div class="timer">deal ends in<br>9 hours:35 min:30 sec<br><p> Shop Now -></p></div>
+                    </div>
+            </div>
+        </div>
+        <div>
+            <div class="normal"> what buyers say</div>
+            <div class="tittle2">Latest buyers reviews</div>
+        </div>
+        <div class="container3">
+            <div class="card10">
+                <div class="rating">
+                    <img src="/public/shose.jpg" class="topimgside">
+                    <div class="review-heading">
+                        <div>top rank shose</div>
+                        <div>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-body">these are the shose of nikhil , nikhil is the king of world if u wnat to buy any shose just but these </div>
+            </div>
+            <div class="card10">
+                <div class="rating">
+                    <img src="/public/shose.jpg" class="topimgside">
+                    <div class="review-heading">
+                        <div>top rank shose</div>
+                        <div>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-body">these are the shose of nikhil , nikhil is the king of world if u wnat to buy any shose just but these </div>
+            </div>
+            <div class="card10">
+                <div class="rating">
+                    <img src="/public/shose.jpg" class="topimgside">
+                    <div class="review-heading">
+                        <div>top rank shose</div>
+                        <div>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-body">these are the shose of nikhil , nikhil is the king of world if u wnat to buy any shose just but these </div>
+            </div>
+            <div class="card10">
+                <div class="rating">
+                    <img src="/public/shose.jpg" class="topimgside">
+                    <div class="review-heading">
+                        <div>top rank shose</div>
+                        <div>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                            <span class="bi bi-star-fill"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-body">these are the shose of nikhil , nikhil is the king of world if u wnat to buy any shose just but these </div>
+            </div>
+        </div>
+        <div class="tittle2">@shopper</div>
+        <div class="subtittle">Appear, dry there darkness they're seas, dry waters.</div>>
+    </section>
+    <footer>
+        <up>
+            <p>Want style Ideas and Treats?</p><br>
+            <div class="mail"> email ID - </div>
+        </up>
+        <sub>
+            <div>
+                <div class="footer-head">shopper.</div>
+                <div class="socialmedia">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-linkedin"></span>
+                </div>
+            </div>
+            <div>
+                <div class="footer-subhead">support</div>
+                <div class="footer-content">
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-subhead">shop</div>
+                <div class="footer-content">
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-subhead">compeny</div>
+                <div class="footer-content">
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+                </div>
+            </div>
+            <div>
+                <div class="footer-subhead">contact us</div>
+                <div class="footer-content">
+                <div>1-202-555-0105</div>
+                <div>1-202-555-0106</div>
+                <div>help@shopper.com</div>
+                </div>
+            </div>
+        </sub>
+        <down>
+            <p class="copyright">© 2019 All rights reserved. Designed by Unvab.</p>
+        </down>    
+    </footer>
+</body>
+</html>

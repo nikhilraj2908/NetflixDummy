@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            width: 200px;
+            background-color: black;
+            z-index: 0;
+            height: 300px;
+        }
+        .class2{
+            width: 200px;
+            background-color:red;
+            z-index: 1;
+            height: 150px;
+         }
+        .class3{ 
+            width: 200px;
+            height: 250px;
+            background-color:yellow;
+        }
+        div{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1"></div>
+    <div class="class2"></div>
+    <div class="class3"></div>
+    <div class="carousel" id="topBanner" data-bs-rider="carausel">
+        <div class="carousel-inner">
+            <div class="carausel-item active">
+                <img src="../../public/bannerupsc1.png">
+            </div>
+            <div class="carausel-item">
+                <img src="../../public/bannerupsc2.png">
+            </div>
+            <div class="carausel-item">
+                <img src="../../public/bannerupsc3.png">
+            </div>
+        </div>
+   </div>
+</body>
+</html>

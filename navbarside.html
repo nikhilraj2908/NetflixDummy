@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       body {
+    margin: 0; /* Remove default margin */
+}
+
+/* Adjust the off-canvas width and transition */
+.offcanvas-collapse {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 56px; /* Adjusted for the navbar height */
+}
+
+.offcanvas-collapse.open {
+    transform: translateX(0);
+}
+
+/* Show the off-canvas menu items */
+.offcanvas-collapse .navbar-nav {
+    display: block;
+}
+
+/* Hide the off-canvas menu items when the off-canvas is closed */
+.offcanvas-collapse:not(.open) .navbar-nav {
+    display: none;
+}
+
+.header-logo {
+    height: 3vw;
+    width: 9vw;
+    padding: 2px;
+}
+.input-group{
+    width: 40%;
+}
+
+@media (max-width:767px) {
+    .header-logo {
+        height: 7vw;
+        width: 30%;
+    }
+    .input-group{
+    width: 100%;
+    }
+}
+
+    </style>
+    <title>navbar</title>
+</head>
+<body class="container-fluid">
+
+    <!-- Off-canvas wrapper -->
+    <div id="offcanvas" class="offcanvas-collapse">
+        <!-- Sidebar content -->
+        <div class="bg-dark p-4">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Nikhil/shastrijiabout.html" class="nav-link text-white">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Nikhil/shastrijiblog.html" class="nav-link text-white">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Nikhil/shastriadmin.html" class="nav-link text-white">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Nikhil/shastrijiFAQs.html" class="nav-link text-white">FAQs</a>
+                </li>
+            </ul>
+            <div class="input-group">
+                <input type="text"  class="form-control" placeholder="Search for notes" name="search">
+                <button class="btn btn-primary" type="submit">
+                    <span class="bi bi-search"></span>
+                </button>
+            </div>
+        </div>
+        <!-- End sidebar content -->
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class="header-logo" src="../../../public/officiallogojpg.png" />
+            <!-- <h2 class="navbar-brand">shopper</h2> -->
+
+            <!-- Initially show the menu items in the header -->
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Nikhil/shastrijiabout.html" class="nav-link ">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Nikhil/shastrijiblog.html" class="nav-link ">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Nikhil/shastriadmin.html" class="nav-link ">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Nikhil/shastrijiFAQs.html" class="nav-link ">FAQs</a>
+                    </li>
+                </ul>
+                <div class="input-group">
+                    <input type="text"  class="form-control" placeholder="Search for notes" name="search">
+                    <button class="btn btn-primary" type="submit">
+                        <span class="bi bi-search"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        // Toggle the off-canvas when the button is clicked
+        // document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        //     document.getElementById('offcanvas').classList.toggle('open');
+        // });
+        // if (offcanvas.classList.contains('open')) {
+        //         offcanvas.classList.remove('open');
+        //     };
+        var offcanvas = document.getElementById('offcanvas');
+    var navbarToggler = document.querySelector('.navbar-toggler');
+
+    navbarToggler.addEventListener('click', function (event) {
+        offcanvas.classList.toggle('open');
+
+        // Close the off-canvas on the first click
+        function closeOffcanvas() {
+            offcanvas.classList.remove('open');
+            document.removeEventListener('click', closeOffcanvas);
+        }
+
+        // Add an event listener to close the off-canvas
+        document.addEventListener('click', closeOffcanvas, { once: true });
+
+        // Prevent the click event from propagating to the body
+        event.stopPropagation();
+    })
+    </script>
+</body>
+</html>
